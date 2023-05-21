@@ -34,13 +34,16 @@
 
     <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
       
-      <div class="toggle__wrapper">
-        <input type="radio" name="theme" id="dark"checked>
-        <input type="radio" name="theme" id="light">
-        <span aria-hidden="true" class="toggle__background"></span>
-        <span aria-hidden="true" class="toggle__button"></span>
-      </div>
-      <label for="dark">Dark Mode</label> 
+      <label for="dark"
+          >Dark Mode <span class="visually-hidden">On</span></label
+        >
+        <div class="toggle__wrapper">
+          <input type="radio" name="theme" id="dark" />
+          <input type="radio" name="theme" id="light" />
+          <span aria-hidden="true" class="toggle__background"></span>
+          <span aria-hidden="true" class="toggle__button"></span>
+        </div>
+        <label for="light" class="visually-hidden">Dark Mode Off</label>
       
     </fieldset> 
 
@@ -58,7 +61,7 @@
         </div> 
         <div class="card__followers">
           <div class="card__count card__count--big">
-            1987
+            1988
           </div>
           <div class="card__label">Followers</div>
         </div>
